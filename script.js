@@ -86,7 +86,7 @@ window.addEventListener("load", function() {
 
         // Status update if fuel is too low.
         if (fuelLevelInput.value < 10000) {
-            // faultyItems.style.visibility = "visible";
+            faultyItems.style.visibility = "visible";
             document.getElementById("fuelStatus").innerHTML = `Fuel level too low for launch.`
             launchStatus.innerHTML = `Shuttle not ready for launch.`
             launchStatus.style.color = "red"
@@ -97,7 +97,7 @@ window.addEventListener("load", function() {
 
         // Status update if cargo mass is too high.
         if (cargoMassInput.value > 10000) {
-            // faultyItems.style.visibility = "visible";
+            faultyItems.style.visibility = "visible";
             document.getElementById("cargoStatus").innerHTML = `Cargo mass is too high for launch.`
             launchStatus.innerHTML = `Shuttle not ready for launch.`
             launchStatus.style.color = "red"
